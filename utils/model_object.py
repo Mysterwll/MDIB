@@ -4,9 +4,6 @@ from Net.loss_functions import *
 from Net.api import *
 from Net.networks import *
 from Net.cp_networks import *
-from Net.graph_net import *
-from Net.cmib import *
-from Net.mpgsurv import *
 
 models = {
     'MDIB': {
@@ -16,7 +13,7 @@ models = {
         'Lr': 0.0001,
         'Epoch': 300,
         'Dataset_mode': 'new',
-        'Model': CLNet,
+        'Model': MDIB,
         'Optimizer': Adam,
         'Loss': joint_loss,
         'Run': run,
